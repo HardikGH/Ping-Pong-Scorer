@@ -3,18 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-do List</title>
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 </head>
-<body>
-    <h1>TO-DO LIST</h1>
-    <ul>
-        <li>"new" - Add a TODO</li>
-        <li>"list" - List all TODO</li>
-        <li>"delete" - Remove Specific TODO</li>
-        <li>"quit" - Quit App</li>
-    </ul>
+<body> 
+    <section class="section">
+    <div class="container">
+        <div class="column">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                <div class="card-image">
+                  <figure class="image is-2by1">
+                    <img src="https://images.stockcake.com/public/9/c/1/9c1ba6db-2a40-401e-870a-67abb7c8f181_large/modern-office-space-stockcake.jpg" alt="">
+                  </figure>
+                </div>
+                <header class="card-header">
+                    <p class="card-header-title">
+                        Ping Pong Score Keeper
+                    </p>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    <h1 class="title is-1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                    <p class="subtitle">Use the button below to keep score</p>
+                    
+                    <label for="gamePoint" class="label is-large is-inline">Playing To: </label>
+                    <div class="select is-rounded">
+                        <select name="" id="gamePoint">
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                  </div>
+                </div>
 
+                <footer class="card-footer">
+                    <button class="is-primary button card-footer-item is-large" id="p1Button">+1 Player 1</button>
+                    <button class="is-info button card-footer-item is-large" id="p2Button">+1 Player 2</button>
+                    <button class="is-danger button card-footer-item is-large" id="reset">Reset</button>
+                </footer>
+              </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
     <script src="app.js"></script>
 </body>
 </html>
